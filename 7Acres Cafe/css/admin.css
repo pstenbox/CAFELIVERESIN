@@ -1,0 +1,159 @@
+body{
+    background: #000;
+}
+
+.container {
+    display: flex;
+}
+
+
+
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+
+.main-content {
+    width: 80%;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid yellow;
+}
+
+table th {
+    background-color: black;
+}
+
+/* Add your CSS styling for the admin panel here */
+body {
+    background-color: black;
+    color: yellow;
+}
+
+.admin-panel {
+    display: flex;
+}
+
+.results-panel {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.results-panel table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.results-panel table th,
+.results-panel table td {
+    padding: 8px;
+    border: 1px solid yellow;
+}
+
+.results-panel table th {
+    background-color: #333;
+}
+
+.menu-panel {
+    width: 10%;
+    background-color: black;
+    color: rgb(192, 158, 45);
+    padding: 20px;
+    border: 1px solid #ccc !important;
+}
+
+.menu-panel ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-panel ul li {
+    margin-bottom: 10px;
+}
+
+.menu-panel ul li a {
+    color: rgb(204, 161, 33);
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+}
+
+.settings-panel {
+    margin-top: 20px;
+    display: none;
+    margin-left: 5em;
+}
+
+.showSettingsPanel{
+    display: block;
+}
+
+.setting {
+    margin-bottom: 20px;
+}
+
+.setting label{
+    font-size: 20px;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    top: .6em;
+}
+
+.toggle input {
+    display: none;
+}
+
+.toggle-switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transform: scale(0.7);
+    transition: background-color 0.3s;
+}
+
+.toggle-switch:before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.toggle input:checked + .toggle-switch {
+    background-color: #4CAF50;
+}
+
+.toggle input:checked + .toggle-switch:before {
+    transform: translateX(26px);
+}
+
+.toggle input:focus + .toggle-switch {
+    box-shadow: 0 0 1px #4CAF50;
+}

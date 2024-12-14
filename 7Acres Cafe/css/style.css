@@ -1,0 +1,652 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #000;
+    font-family: "futura-pt-bold", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+main{
+    justify-content: center;
+    display: flex;
+}
+
+.congratulations_popup{
+    display: none;
+}
+
+.pageFrame{
+    width: 100%;
+    max-width: 450px;
+    height: 100%;
+    background-image: url('../images/backgroundTilesDark.png');
+    background-repeat: repeat-y;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.introAnimation{
+    /* background-image: url('../images/backgroundTiles.pngGrouped.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none !important; */
+}
+
+.frameContent{
+    text-align: center;
+}
+
+.main_logo{
+    margin-bottom: -4em;
+}
+
+.pageFrame h1,
+.pageFrame h2 {
+    color: #FCB315;
+}
+
+.age_check_buttons{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 1.2em;
+}
+
+.age_check_buttons button{
+    width: 120px;
+    height: 35px;
+    background: transparent;
+    outline: 1px solid #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+    border: none;
+}
+
+.button_selected{
+    background: #FCB315 !important;
+    outline: 1px solid #FCB315 !important;
+    color: #000000 !important;
+    cursor: pointer;
+}
+
+.selected_quiz_answer{
+    background: #FCB315 !important;
+    outline: 1px solid #FCB315 !important;
+    border: none !important;
+    color: #000000 !important;
+    cursor: pointer;
+
+}
+
+.provinceContainer{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    justify-content: center;
+}
+
+.sectionSpacer{
+    margin-top: 2.3em;
+}
+
+#provinceSelect{
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    font-family: "futura-pt", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.store_details_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .6em;
+    position: relative;
+    max-width: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.store_details_form input[type=text]{
+    width: 250px;
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+    height: 28px;
+}
+
+.store_details_form ::-webkit-input-placeholder{
+    text-align: center;
+    font-weight: bold;
+    color: #000000;
+}
+
+.default_btn{
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1.3em;
+}
+
+.age_gate_submit_btn{
+    outline: none;
+    border: none;
+    width: 250px;
+    height: 40px;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 1.3em;
+}
+
+.store_details_form input[name="store_name"] {
+    margin-top: 1em;
+}
+
+.store_details_form input[name="store_pincode"] {
+    margin-top: 1.3em;
+}
+
+.tooltipSelector{
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    position: absolute;
+    bottom: 5.7em;
+    right: .3em;
+    cursor: pointer;
+}
+
+.footerPrint{
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "nitti", monospace;
+    font-weight: 400;
+    font-style: normal;
+    max-width: 300px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 4.5em;
+    font-size: 12px;
+}
+
+.footerPrint span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.pageFrame h1{
+    text-transform: uppercase;
+}
+
+.quizAnswerGuide h1{
+    font-size: 20px;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.quizAnswerGuide h2{
+    font-size: 14px;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+.cafe_delight_description{
+    margin: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafe_delight_description h1{
+    font-size: 20px;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    margin: 1em 0;
+}
+
+.divider{
+    width: 80%;
+    height: 1px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+.cafe_delight_description p{
+    line-height: 16px;
+    color: #ffffff;
+    font-family: "nitti", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    max-width: 350px;
+    margin-top: 1.9em;
+}
+
+.sativa_chart_desc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sativa_chart_desc h1{
+    color: #FFFFFF;
+    font-size: 28px;
+    letter-spacing: .1em;
+}
+
+.education_portal_submitBtn{
+    margin-top: 2.8em;
+}
+
+.quiz_question{
+    width: 250px;
+    margin: 0 auto;
+}
+
+.multiple_choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    margin-top: 2.5em;
+}
+
+.multiple_choice p{
+    color: #ffffff;
+    font-family: "nitti", monospace;
+    font-weight: 400;
+    font-style: normal;
+    border: 1px solid #fff;
+    max-width: 300px;
+    min-width: 300px;
+    padding: 1em;
+    line-height: 18px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.quiz_submit_btn{
+    margin-top: 4em;
+}
+
+.current_quiz_question{
+    margin-top: 1em;
+    color: #ffffff;
+    font-family: "nitti", monospace;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.yellow_popup{
+    background: #FCB315;
+    position: absolute;
+    top: 20%;
+    height: 430px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 2em;
+}
+
+.yellow_popup h2,
+.yellow_popup p{
+    color: #000000 !important;
+}
+
+.yellow_popup img{
+    margin-top: 1.5em;
+}
+
+.yellow_popup p{
+    font-family: "nitti", monospace;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    max-width: 230px;
+    line-height: 19px;
+    margin-top: 1.3em;
+}
+
+.quiz_black_btn{
+    cursor: pointer;
+    font-family: "nitti", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color:#ffffff;
+    background: #000000;
+    border: none;
+    outline: none;
+    width: 270px;
+    height: 40px;
+    font-size: 18px;
+    position: absolute;
+    bottom: 2em;
+}
+
+.pageFrame{
+    position: relative;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Ensure this is below the popup z-index if it's specified */
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.content-blur{
+    filter: blur(5px);
+}
+
+.yellow_popup, .tooltipGuide {
+    z-index: 2; /* Ensures content and popup are above the overlay */
+}
+
+.try_again_popup p{
+    margin-top: 4em;
+    font-size: 20px;
+    line-height: 24px;
+    max-width: 270px;
+}
+
+.customer_details h1{
+    font-size: 22px;
+    margin-bottom: .2em;
+}
+
+.thankYou h1{
+    font-size: 28px;
+}
+
+.how_to_earn_more_btn{
+    font-size: 15px;
+    height: 55px;
+    margin-top: 5em;
+}
+
+.pinsGuide{
+    max-width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pinsGuide h2{
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.pinsGuide img{
+    margin-top: 1em;
+}
+
+.pinsGuide h2:last-of-type {
+    margin-top: 1.5em;
+}
+
+.tooltipGuide{
+    position: absolute;
+    bottom: 11em;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 80%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tooltipGuide h1{
+    font-size: 20px;
+    font-family: "nitti", monospace;
+    font-weight: 400;
+    font-style: normal;
+    color: #000000;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 230px;
+    line-height: 20px;
+}
+
+.close_tool_tip{
+    position: absolute;
+    font-family: "nitti", monospace;
+    top: 0;
+    right: .5em;
+    font-size: 30px;
+    font-weight: 500;
+    font-style: normal;
+    cursor: pointer;
+
+}
+
+.termsPolicy h1, .policyPages h1{
+    font-size: 24px;
+    max-width: 350px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+
+.termsPolicy h2, .policyPages h2{
+    font-size: 18px;
+    text-align: left;
+    margin-left: 2em;
+    margin-top: 1.5em;
+}
+
+.termsPolicy p, .policyPages p, .policyPages ul li{
+    font-size: 12px;
+    text-align: left;
+    margin-left: 3em;
+    color: #ffffff;
+    max-width: 350px;
+    font-family: "nitti", monospace;
+    font-weight: 400;
+    margin-top: .7em;
+    list-style: none;
+}
+
+.suggestions-container {
+    border: 1px solid #ccc;
+    border-top: none;
+    position: absolute;
+    z-index: 1000;
+    width: 200px; /* Match the input field width */
+    background-color: #fff;
+    display: none; /* Initially hidden */
+    top: 5.5em;
+    left: 85px;
+    width: 252px;
+    max-height: 160px;
+    overflow-y: scroll;
+}
+
+#storeNameSuggestions{
+    top: 3em;
+    
+}
+
+.suggestions-container p {
+    margin: 0;
+    padding: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "nitti", monospace;
+    font-weight: 400;
+    border-top: 1px solid #c3c3c3;
+}
+
+.suggestions-container p:hover {
+    background-color: #f0f0f0;
+}
+
+.ageGate, 
+.educationPortal,
+.questionPortal,
+.spintowin,
+.dataCapture,
+.thankYou,
+.morePinsGuide,
+.termsPolicy,
+.sellSheet,
+.rulesPage
+.privacyPolicy{
+    display: none;
+}
+
+.yellow_popup{
+    display: none;
+}
+
+.ageGate{
+    display: flex;
+}
+
+.pageFrame {
+    display: none;
+}
+
+.policyPages{
+   height: 2000px;
+}
+
+#wheel-container {
+    position: relative;
+    transform: scale(0.9);
+}
+
+#wheel {
+    width: 100%;
+}
+
+#arrow {
+    position: absolute;
+    top: -1.5em;
+    left: 50%;
+    transform: translateX(-50%) scale(0.8);
+    z-index: 10;
+    
+    /* Adjust width as necessary */
+}
+
+#centercap{
+    position: absolute;
+    top: 9.3em;
+    transform: translateX(-50%) scale(0.6);
+    left: 50%;
+
+}
+
+#prize-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.alert-content {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#next-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #009688;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.quick-start-btn{
+  margin-top: 1em;
+  margin-bottom: 1em;  
+}
+
+.hideIntroVideo{
+    display: none !important;
+}
+
+.pageFrame.introAnimation {
+    display: block;
+}
+
+#introVideo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+input, select, textarea, button {
+    font-size: 16px; /* Minimum size to prevent zoom on iOS */
+}
+
+/* Updated Changes */
+.delightresintitle{
+    font-size: 20px !important;
+    max-width: 350px !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+    margin: 1em 0 !important;
+    color: #FCB315 !important;
+}
+
+.productCollectionTitle{
+    margin-top: -3em !important;
+}
+
+.vanillaimageresin{
+    margin: .5em 0 !important;
+    margin-bottom: -3em !important;
+}
